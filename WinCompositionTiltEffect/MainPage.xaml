@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="WinCompositionTiltEffect.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinCompositionTiltEffect"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
+    mc:Ignorable="d">
+
+    <ScrollViewer Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel >
+            <TextBlock Text="Windows Composition Tilt Effect" FontSize="40" TextWrapping="WrapWholeWords" Margin="20" HorizontalAlignment="Center">
+            <i:Interaction.Behaviors>
+                <local:TiltBehavior />
+            </i:Interaction.Behaviors>
+            </TextBlock>
+
+            <Image Source="ms-appx:///Images/UnicornNinjaCat.png" Width="200" Height="200" Margin="20">
+                <i:Interaction.Behaviors>
+                    <local:TiltBehavior />
+                </i:Interaction.Behaviors>
+            </Image>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border Width="50" Height="50" Margin="10" Background="Teal">
+                    <i:Interaction.Behaviors>
+                        <local:TiltBehavior />
+                    </i:Interaction.Behaviors>
+
+                    <SymbolIcon Symbol="Add" Foreground="White" />
+                </Border>
+                
+                <Border Width="50" Height="50" Margin="10" Background="Teal">
+                    <i:Interaction.Behaviors>
+                        <local:TiltBehavior />
+                    </i:Interaction.Behaviors>
+
+                    <SymbolIcon Symbol="Remove" Foreground="White" />
+                </Border>
+                
+                <Border Width="50" Height="50" Margin="10" Background="Teal">
+                    <i:Interaction.Behaviors>
+                        <local:TiltBehavior />
+                    </i:Interaction.Behaviors>
+
+                    <SymbolIcon Symbol="Accept" Foreground="White" />
+                </Border>
+                
+                <Border Width="50" Height="50" Margin="10" Background="Teal">
+                    <i:Interaction.Behaviors>
+                        <local:TiltBehavior />
+                    </i:Interaction.Behaviors>
+
+                    <SymbolIcon Symbol="Cancel" Foreground="White" />
+                </Border>
+            </StackPanel>
+
+            <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit urna erat, et tempus tortor rutrum semper. Morbi dui odio, sollicitudin a tortor ut, mattis vulputate justo. Aenean a nisl sit amet velit mollis placerat lacinia non velit. Suspendisse potenti. Pellentesque at tristique arcu. Praesent et malesuada libero. Ut at vestibulum elit, et mattis justo. Suspendisse porta orci felis, eget mollis ligula porttitor id. Vestibulum vel consequat quam, in ullamcorper justo. Curabitur ut magna aliquet, placerat mauris id, euismod sapien. Fusce faucibus turpis sit amet nibh posuere, ut facilisis nisl tincidunt.&#x0a;&#x0a;Maecenas cursus leo ut arcu elementum, vel egestas massa mattis. Aenean eget varius felis. Cras luctus ligula in nulla elementum, sit amet placerat orci scelerisque. Nulla ultrices erat ligula, at feugiat mi lacinia nec. Quisque facilisis nisl augue, vel feugiat purus rutrum eu. Aenean non dapibus sem. Mauris congue enim egestas mauris pretium convallis. Quisque sed velit non sapien tempus vulputate ac id orci. Sed vitae urna eu sem mattis aliquet non ut leo. Phasellus auctor erat elit, quis blandit sapien maximus vitae. Fusce laoreet nisl et accumsan sagittis. Nullam sollicitudin sapien elit, nec luctus nisi vestibulum ac.&#x0a;&#x0a;Nam mollis sapien lectus, id accumsan magna condimentum aliquam. Integer mi tortor, tempor nec viverra sit amet, ullamcorper sed mi. Morbi pellentesque erat ac lorem pharetra, id sagittis metus consectetur. Pellentesque eget turpis vel odio faucibus volutpat. Nunc et arcu pulvinar orci pulvinar sollicitudin maximus posuere neque. Vestibulum nec cursus sapien, vitae efficitur turpis. Nulla ac rhoncus leo. Curabitur molestie pulvinar lectus id consequat. Proin enim enim, suscipit eu arcu sit amet, tristique pellentesque erat. Cras efficitur neque nec sem mattis vehicula. Nullam enim elit, porttitor non volutpat quis, efficitur nec mi. Proin ac urna dapibus, pretium dolor at, maximus felis." Margin="20" TextWrapping="WrapWholeWords">
+                <i:Interaction.Behaviors>
+                    <local:TiltBehavior />
+                </i:Interaction.Behaviors>
+            </TextBlock>
+
+        </StackPanel>
+
+    </ScrollViewer>
+</Page>
